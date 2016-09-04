@@ -98,3 +98,41 @@
 	filter: drop-shadow(.05em .05em .1em gray);
 }
 
+/**
+ * Color tinting
+ */
+#color_tinting{
+	clear: both;
+}
+/* 色変換(filter) */
+#img_color_tinting_filter{
+	float: left;
+	max-width: 640px;
+	transition: 1s filter, 1s -webkit-filter;
+	-webkit-filter: sepia() saturate(4) hue-rotate(295deg);
+	filter: sepia() saturate(4) hue-rotate(295deg);
+	margin-left: 20px;
+}
+#img_color_tinting_filter:hover,
+#img_color_tinting_filter:focus {
+	-webkit-filter: none;
+	filter: none;
+}
+/* 色変換(filter) */
+#img_color_tinting_blend{
+	float: left;
+	margin-left: 20px;
+	width: 240px; height: 135px;
+	background-size: cover;
+	background-color: hsl(335, 100%, 50%);
+	background-blend-mode: luminosity;
+	transition: .5s background-color;
+}
+#img_color_tinting_blend:hover {
+	background-color: transparent;
+}
+
+#frosted_glass{
+	clear: both;
+}
+
