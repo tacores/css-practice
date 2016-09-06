@@ -1,0 +1,68 @@
+/* text effects */
+
+div{
+	width: 1.6in;
+	height: 1in;
+	margin-left: 20px;
+	padding: .5em;
+	float: left;
+	font: 150% Baskerville, Palatino, serif;
+}
+
+/*  */
+#div_letterpress{
+	background: hsl(210, 13%, 60%);
+    color: hsl(210, 13%, 30%);
+    text-shadow: 0 1px 1px hsla(0, 0%, 100%, .8);
+}
+#div_stroked{
+    background: deeppink;
+    color: white;
+    text-shadow: 1px 1px black, -1px -1px black,
+                 1px -1px black, -1px 1px black;
+}
+#div_fake_outline{
+    background: deeppink;
+    color: white;
+    text-shadow: 0 0 1px black, 0 0 1px black,
+                 0 0 1px black, 0 0 1px black,
+                 0 0 1px black, 0 0 1px black;
+}
+#div_glow{
+    background: #203;
+    color: white;
+    transition: 1s;
+}
+#div_glow:hover{
+    text-shadow: 0 0 .1em, 0 0 .3em;
+}
+#div_blurred{
+    background: #203;
+    color: white;
+    transition: 1s;
+}
+#div_blurred:hover{
+    color: transparent;
+    text-shadow: 0 0 .1em white, 0 0 .3em white;
+}
+#div_extruded{
+	font: 150% Rockwell, serif;
+    background: #58a;
+    color: white;
+    text-shadow: 0 1px hsl(0,0%,85%),
+                 0 2px hsl(0,0%,80%),
+                 0 3px hsl(0,0%,75%),
+                 0 4px hsl(0,0%,70%),
+                 0 5px hsl(0,0%,65%),
+                 0 5px 10px black;
+}
+#div_retro{
+    color: white;
+    background: hsl(0,50%,45%);
+    text-shadow: 1px 1px black, 2px 2px black,
+                 3px 3px black, 4px 4px black,
+                 5px 5px black, 6px 6px black,
+                 7px 7px black, 8px 8px black;
+    font-weight: bold;
+}
+
