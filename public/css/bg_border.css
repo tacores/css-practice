@@ -1,0 +1,25 @@
+/*  */
+body {
+	min-height: 100vh;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body, main::before {
+	background: url("../image/ike.jpg") 0 / cover fixed;
+}
+div{
+	width: 1.6in;
+	height: 1in;
+	margin-left: 20px;
+	padding: .5em;
+	float: left;
+	font: 150% Baskerville, Palatino, serif;
+}
+/* 透過ボーダー */
+#div_transborder{
+    border: 10px solid hsla(0,0%,100%,.5);
+    background: White;
+    background-clip: padding-box; /* default: border-box */
+}
+
