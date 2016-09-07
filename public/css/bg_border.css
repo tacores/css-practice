@@ -11,7 +11,8 @@ body, main::before {
 div{
 	width: 1.6in;
 	height: 1in;
-	margin-left: 20px;
+	margin-left: 50px;
+	margin-top: 30px;
 	padding: .5em;
 	float: left;
 	font: 150% Baskerville, Palatino, serif;
@@ -21,5 +22,70 @@ div{
     border: 10px solid hsla(0,0%,100%,.5);
     background: White;
     background-clip: padding-box; /* default: border-box */
+}
+/* multiボーダー */
+#div_multiborder_shadow{
+    background: yellowgreen;
+    box-shadow: 0 0 0 10px #655,
+                0 0 0 15px deeppink;
+}
+#div_multiborder_outline{
+    background: yellowgreen;
+    border: 10px solid #655;
+    outline: 15px solid deeppink;
+}
+/**/
+#div_inner_rounding{
+    background: tan;
+    border-radius: .8em;
+    padding: 1em;
+    box-shadow: 0 0 0 .6em #655;
+    outline: .6em solid #655;
+}
+/**/
+#div_stripped_h_bg1{
+    background: linear-gradient(#fb3 50%, #58a 50%);
+    background-size: 100% 30px;
+    clear: both;
+}
+#div_stripped_h_bg2{
+    background: linear-gradient(#fb3 30%, #58a 0);
+    background-size: 100% 30px;
+}
+#div_stripped_h_bg3{
+    background: linear-gradient(#fb3 33.3%, #58a 0, #58a 66.6%, yellowgreen 0);
+    background-size: 100% 45px;
+}
+#div_stripped_v_bg1{
+    background: linear-gradient(to right, #fb3 50%, #58a 0);
+    background-size: 30px 100%;
+}
+#div_stripped_diagonal_bg1{
+    background: linear-gradient(45deg, #fb3 50%, #58a 0);
+    background-size: 30px 30px;
+    clear: both;
+}
+#div_stripped_diagonal_bg2{
+    background: linear-gradient(45deg,
+                  #fb3 25%, #58a 0, #58a 50%,
+                  #fb3 0, #fb3 75%, #58a 0);
+    background-size: 30px 30px;
+}
+#div_stripped_diagonal_bg3{
+    background: linear-gradient(45deg,
+                  #fb3 25%, #58a 0, #58a 50%,
+                  #fb3 0, #fb3 75%, #58a 0);
+    background-size: 42.426406871px 42.426406871px;
+}
+#div_stripped_diagonal_bg4{
+    background: repeating-linear-gradient(60deg,
+                  #fb3, #fb3 15px, #58a 0, #58a 30px);
+}
+#div_stripped_flex_subtle_bg{
+    background: #58a;
+    background-image: repeating-linear-gradient(30deg,
+                        hsla(0,0%,100%,.1),
+                        hsla(0,0%,100%,.1) 15px,
+                        transparent 0, transparent 30px);
 }
 
